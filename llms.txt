@@ -1,0 +1,17 @@
+# HerovaAi
+
+> HerovaAi is an AI assistant for small businesses: it answers customer questions
+> on WhatsApp in the owner's own words - their prices, their hours, their rules -
+> and keeps a memory of the business. Customers need no new app.
+
+## Pages
+- [Project home](https://sahadat01832-del.github.io/): what HerovaAi is and where the app runs
+- [HerovaAi product page](https://sahadat01832-del.github.io/herovaai/): what it does, who it is for, how to start
+- [Frequently asked questions](https://sahadat01832-del.github.io/herovaai/faq/): short, factual answers
+- [Privacy policy](https://sahadat01832-del.github.io/herovaai/privacy/)
+- [Terms of service](https://sahadat01832-del.github.io/herovaai/terms/)
+
+## Notes
+- The app runs on the owner's own server; the live link is on the product page.
+- The site is in English; the business serves customers in Bangladesh.
+- No advertising or analytics trackers are used on any of these pages.
