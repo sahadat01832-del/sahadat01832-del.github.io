@@ -7,6 +7,7 @@
 ## Pages
 - [Project home](https://sahadat01832-del.github.io/): what HerovaAi is and where the app runs
 - [HerovaAi product page](https://sahadat01832-del.github.io/herovaai/): what it does, who it is for, how to start
+- [Automatic WhatsApp replies: what actually works](https://sahadat01832-del.github.io/herovaai/whatsapp-auto-reply/): a practical guide to automating customer replies
 - [Frequently asked questions](https://sahadat01832-del.github.io/herovaai/faq/): short, factual answers
 - [Privacy policy](https://sahadat01832-del.github.io/herovaai/privacy/)
 - [Terms of service](https://sahadat01832-del.github.io/herovaai/terms/)
