@@ -4,18 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="msvalidate.01" content="58455D0121528EDEEE242C7727389B05">
-<title>HerovaAi — project home</title>
-<meta name="description" content="HerovaAi is an AI assistant for small businesses that answers customer questions on WhatsApp in the owner's own words. This is the project home: what it is, where the app runs, and the site's policies.">
+<title>HerovaAi — The Autonomous AI Engine for Your Shop &amp; Content</title>
+<meta name="description" content="HerovaAi automates customer service on WhatsApp 24/7 in your own words, generates images and cinematic video with Google Flow, and publishes daily to YouTube Shorts &amp; TikTok. Free to try.">
 <link rel="canonical" href="https://sahadat01832-del.github.io/">
-<meta name="theme-color" content="#0a0d0f">
+<meta name="theme-color" content="#05070b">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="HerovaAi">
-<meta property="og:title" content="HerovaAi — project home">
-<meta property="og:description" content="An AI assistant that answers customers on WhatsApp in the owner's own words. What it is, where the app runs, and how to reach the project.">
+<meta property="og:title" content="HerovaAi — The Autonomous AI Engine for Your Shop &amp; Content">
+<meta property="og:description" content="WhatsApp replies in your own words, Google Flow image &amp; video creation, and 1-click publishing to YouTube Shorts &amp; TikTok.">
 <meta property="og:url" content="https://sahadat01832-del.github.io/">
 <meta property="og:image" content="https://sahadat01832-del.github.io/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -23,74 +23,136 @@
 <meta property="og:image:alt" content="HerovaAi — your shop's assistant, answering customers on WhatsApp">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://sahadat01832-del.github.io/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
     color-scheme: dark;
-    --bg: #0a0d0f;
-    --panel: rgba(255, 255, 255, 0.03);
+    --bg-void: #05070b;
+    --bg: #080a10;
+    --panel: rgba(255, 255, 255, 0.035);
     --line: rgba(255, 255, 255, 0.08);
-    --text: #f4f5f3;
-    --dim: #9aa3a0;
-    --dim-2: #6d7674;
-    --gold: #c0a872;
-    --gold-light: #d8c08a;
-    --gold-soft: rgba(192, 168, 114, 0.12);
+    --line-bright: rgba(255, 255, 255, 0.16);
+    --line-gold: rgba(224, 197, 133, 0.4);
+    --text: #f6f5f2;
+    --muted: #a2a7ad;
+    --dim: #6b7280;
+    --body: #c7ccd4;
+    --gold: #d8bd85;
+    --gold-light: #ecd6a2;
+    --gold-deep: #b89a5e;
+    --emerald: #4ade9b;
     --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body {
-    margin: 0; padding: 2.6rem 1.25rem 3.5rem;
-    background: var(--bg); color: var(--text);
-    font: 16px/1.7 -apple-system, "Segoe UI", Roboto, "Space Grotesk", system-ui, sans-serif;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.7 Inter, system-ui, -apple-system, sans-serif;
     background-image:
-      radial-gradient(55rem 35rem at 85% -15%, rgba(192, 168, 114, 0.10), transparent 60%),
-      radial-gradient(45rem 28rem at 0% 10%, rgba(70, 110, 140, 0.10), transparent 60%);
+      radial-gradient(60rem 34rem at 82% -12%, rgba(224, 197, 133, 0.11), transparent 60%),
+      radial-gradient(45rem 28rem at 3% 18%, rgba(76, 196, 240, 0.06), transparent 60%);
     background-attachment: fixed;
   }
-  main { max-width: 46rem; margin: 0 auto; }
-  .brand { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.6rem; }
+  h1, h2, h3, .brand, .btn, .eyebrow, .stat b { font-family: Sora, Inter, sans-serif; }
+  a { color: var(--gold-light); text-decoration: none; transition: color 0.18s var(--ease); }
+  a:hover { color: #fff; }
+  :where(a, button):focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 0.4rem; }
+  ::selection { background: rgba(224, 197, 133, 0.32); color: #fff; }
+
+  .skip { position: absolute; left: -999px; top: 0; background: var(--gold-light); color: #07090b; padding: 0.6rem 1rem; border-radius: 0 0 0.6rem 0; font-weight: 600; z-index: 200; }
+  .skip:focus { left: 0; }
+
+  .shell { max-width: 64rem; margin: 0 auto; padding: 1.3rem 1.25rem 3rem; }
+
+  .topbar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding: 0.2rem 0 2.4rem; }
+  .brand { display: flex; align-items: center; gap: 0.6rem; font-weight: 700; font-size: 16px; letter-spacing: -0.01em; color: var(--text); }
+  .brand:hover { color: var(--text); }
   .mark {
     display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px;
-    background: linear-gradient(140deg, var(--gold-light), #8d7748); color: #0a0d0f;
-    font-weight: 700; font-family: "Space Grotesk", system-ui, sans-serif;
-    box-shadow: 0 2px 12px rgba(192, 168, 114, 0.2);
+    background: linear-gradient(140deg, var(--gold-light), var(--gold-deep)); color: #0b0a06;
+    font-weight: 800; font-size: 15px;
+    box-shadow: 0 2px 14px rgba(224, 197, 133, 0.28);
   }
-  .brand-name { font-weight: 600; font-size: 15px; letter-spacing: -0.01em; }
-  .brand-name em { font-style: normal; color: var(--gold); }
-  h1 { font-size: clamp(1.7rem, 4vw, 2.4rem); line-height: 1.2; margin: 0 0 0.75rem; letter-spacing: -0.01em; text-wrap: balance; }
-  h2 { font-size: 11px; margin: 2.6rem 0 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--dim-2); }
-  p { margin: 0.65rem 0; color: #cdd9e1; }
-  ul { padding-left: 1.1rem; margin: 0.6rem 0; }
-  li { margin: 0.45rem 0; color: #cdd9e1; }
-  a { color: var(--gold); text-decoration: none; transition: color 0.18s var(--ease); }
-  a:hover { color: var(--gold-light); text-decoration: underline; text-underline-offset: 3px; }
-  :where(a, button):focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 0.4rem; }
-  ::selection { background: rgba(192, 168, 114, 0.3); color: #fff; }
-  .actions { display: flex; gap: 0.6rem; flex-wrap: wrap; margin: 1.3rem 0 0; }
-  a.cta {
-    display: inline-block; padding: 0.7rem 1.15rem; border-radius: 0.7rem;
-    background: linear-gradient(140deg, #d8c08a, #b39a63); color: #17140c;
-    font-weight: 600; font-size: 14px; border: 1px solid transparent;
-    transition: transform 0.18s var(--ease), box-shadow 0.18s var(--ease);
+  .brand em { font-style: normal; color: var(--gold); }
+  .topbar nav { display: flex; gap: 0.55rem; flex-wrap: wrap; }
+
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+    padding: 0.72rem 1.3rem; border-radius: 0.8rem; font-size: 14.5px; font-weight: 600;
+    letter-spacing: -0.01em; border: 1px solid transparent; cursor: pointer;
+    transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease), background 0.2s var(--ease);
   }
-  a.cta:hover { text-decoration: none; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(192, 168, 114, 0.22); color: #17140c; }
-  a.cta.ghost { background: var(--panel); color: var(--text); border-color: var(--line); }
-  a.cta.ghost:hover { border-color: rgba(192, 168, 114, 0.45); background: var(--gold-soft); color: var(--text); }
-  .cards { display: grid; gap: 0.8rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); margin: 0.8rem 0 0; list-style: none; padding: 0; }
-  .cards li { margin: 0; }
+  .btn.primary {
+    background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold-deep) 100%);
+    color: #0b0a06;
+    box-shadow: 0 12px 30px -10px rgba(224, 197, 133, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  }
+  .btn.primary:hover { transform: translateY(-2px); box-shadow: 0 18px 40px -10px rgba(224, 197, 133, 0.65); color: #0b0a06; }
+  .btn.ghost { border-color: var(--line-bright); background: rgba(255, 255, 255, 0.03); color: var(--text); }
+  .btn.ghost:hover { transform: translateY(-2px); border-color: var(--line-gold); background: rgba(224, 197, 133, 0.08); color: var(--text); }
+  .btn.sm { padding: 0.5rem 0.95rem; font-size: 13px; border-radius: 0.7rem; }
+
+  .hero { text-align: center; max-width: 54rem; margin: 0 auto; padding-top: clamp(0.5rem, 3vw, 2rem); }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    padding: 0.4rem 1rem; border-radius: 999px;
+    border: 1px solid var(--line-gold); background: rgba(224, 197, 133, 0.07);
+    color: var(--gold-light); font-size: 11.5px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+  }
+  .eyebrow::before {
+    content: ""; width: 7px; height: 7px; border-radius: 50%;
+    background: var(--emerald); box-shadow: 0 0 10px var(--emerald);
+    animation: pulse 2.4s infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.75); } }
+
+  h1 {
+    font-size: clamp(2rem, 5.4vw, 3.1rem); line-height: 1.1; font-weight: 800;
+    letter-spacing: -0.02em; margin: 1.2rem 0 0; text-wrap: balance;
+  }
+  .grad {
+    background: linear-gradient(120deg, var(--gold-light), var(--gold) 45%, var(--gold-deep));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .lede { max-width: 45rem; margin: 1.05rem auto 0; color: var(--body); font-size: 16.5px; }
+  .actions { display: flex; gap: 0.7rem; justify-content: center; flex-wrap: wrap; margin: 1.7rem 0 0; }
+  .trust { margin: 0.95rem 0 0; color: var(--dim); font-size: 12.5px; }
+
+  .stats {
+    list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.8rem;
+    max-width: 52rem; margin: 2.8rem auto 0; padding: 1.4rem 0; text-align: center;
+    border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  }
+  .stat b { display: block; font-size: clamp(1.3rem, 3vw, 1.7rem); font-weight: 700; color: var(--gold); line-height: 1.2; }
+  .stat span { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dim); }
+  @media (max-width: 560px) { .stats { grid-template-columns: repeat(2, 1fr); row-gap: 1.2rem; } }
+
+  .section-label { margin: 3rem 0 1rem; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--dim); text-align: center; }
+  .cards { list-style: none; padding: 0; display: grid; gap: 0.8rem; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); margin: 0; }
   .cards a {
-    display: block; border: 1px solid var(--line); background: var(--panel); border-radius: 0.9rem;
-    padding: 0.85rem 1rem; color: var(--text); font-size: 14px;
+    display: block; height: 100%; border: 1px solid var(--line); background: var(--panel);
+    border-radius: 1rem; padding: 1rem 1.1rem; color: var(--text); font-size: 14.5px; font-weight: 600;
     transition: transform 0.22s var(--ease), border-color 0.22s var(--ease), background 0.22s var(--ease);
   }
-  .cards a:hover { text-decoration: none; transform: translateY(-3px); border-color: rgba(192, 168, 114, 0.3); background: rgba(255, 255, 255, 0.05); }
-  .cards span { display: block; color: var(--dim); font-size: 12.5px; margin-top: 0.15rem; }
-  .fine { margin-top: 3rem; padding-top: 1.1rem; border-top: 1px solid var(--line); font-size: 0.87rem; color: #8b9aa5; }
+  .cards a:hover { transform: translateY(-3px); border-color: rgba(224, 197, 133, 0.35); background: rgba(255, 255, 255, 0.055); color: var(--text); }
+  .cards span { display: block; color: var(--muted); font-size: 12.5px; font-weight: 400; margin-top: 0.3rem; }
+
+  .panels { display: grid; gap: 0.8rem; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); margin-top: 2.4rem; }
+  .panel { border: 1px solid var(--line); background: var(--panel); border-radius: 1rem; padding: 1.1rem 1.2rem; }
+  .panel h3 { margin: 0.1rem 0 0.4rem; font-size: 14.5px; color: var(--text); }
+  .panel p { margin: 0.4rem 0 0; color: var(--body); font-size: 14px; }
+
+  footer { margin-top: 2.6rem; padding-top: 1.1rem; border-top: 1px solid var(--line); color: var(--dim); font-size: 12.5px; display: flex; justify-content: space-between; gap: 0.6rem; flex-wrap: wrap; }
+
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
-    *, *::before, *::after { transition-duration: 0.01ms !important; }
-    a.cta:hover, .cards a:hover { transform: none; }
+    *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+    .btn:hover, .cards a:hover { transform: none; }
   }
 </style>
 <script type="application/ld+json">
@@ -118,50 +180,82 @@
 </script>
 </head>
 <body>
-<main id="main">
-  <div class="brand">
-    <span class="mark" aria-hidden="true">H</span>
-    <span class="brand-name">Herova<em>Ai</em></span>
-  </div>
+<a class="skip" href="#main">Skip to content</a>
+<div class="shell">
+  <header class="topbar">
+    <a class="brand" href="https://sahadat01832-del.github.io/">
+      <span class="mark" aria-hidden="true">H</span>
+      <span>Herova<em>Ai</em></span>
+    </a>
+    <nav aria-label="Main">
+      <a class="btn ghost sm" href="https://sahadat01832-del.github.io/herovaai/">Product page</a>
+      <a class="btn primary sm" href="https://sahadat-ms-challenger-b450m-1.tail494859.ts.net/">Open the app</a>
+    </nav>
+  </header>
 
-  <h1>HerovaAi — project home</h1>
-  <p><strong>HerovaAi</strong> is an AI assistant for small businesses. It answers your customers'
-     questions on WhatsApp in your own words — your prices, your hours, your rules — and keeps a
-     memory of your business. Your customers install nothing new.</p>
+  <main id="main">
+    <section class="hero">
+      <span class="eyebrow">Autonomous AI Engine for Business &amp; Content</span>
 
-  <div class="actions">
-    <a class="cta" href="https://sahadat01832-del.github.io/herovaai/">See the product page →</a>
-    <a class="cta ghost" href="https://sahadat01832-del.github.io/herovaai/whatsapp-auto-reply/">Read the guide</a>
-  </div>
+      <h1>Automate customer sales<br><span class="grad">&amp; grow your social presence</span></h1>
 
-  <h2>Where the app runs</h2>
-  <p>The assistant itself is self-hosted: it runs on the operator's own machine and is reachable
-     through the live link on the product page. This page is static and always available, so the
-     product stays findable even when the app itself is offline.</p>
+      <p class="lede">Tell it once what you sell, your prices and your rules. HerovaAi answers
+        customers on WhatsApp around the clock, generates images and cinematic video with Google
+        Flow, and publishes to YouTube Shorts &amp; TikTok — all from one dashboard.</p>
 
-  <h2>Pages</h2>
-  <ul class="cards">
-    <li><a href="https://sahadat01832-del.github.io/herovaai/">Product page<span>What it does, who it is for, how to start</span></a></li>
-    <li><a href="https://sahadat01832-del.github.io/herovaai/whatsapp-auto-reply/">Automating WhatsApp replies<span>What works, what breaks, what to check first</span></a></li>
-    <li><a href="https://sahadat01832-del.github.io/herovaai/connect/">Connect your channels<span>WhatsApp, Messenger, Instagram, YouTube, Google, and what cannot be automated</span></a></li>
-    <li><a href="https://sahadat01832-del.github.io/herovaai/faq/">Frequently asked questions<span>Short, factual answers</span></a></li>
-    <li><a href="https://sahadat01832-del.github.io/herovaai/privacy/">Privacy policy<span>What is stored and how to delete it</span></a></li>
-    <li><a href="https://sahadat01832-del.github.io/herovaai/terms/">Terms of service<span>The rules for using the service</span></a></li>
-    <li><a href="https://sahadat01832-del.github.io/llms.txt">llms.txt<span>A machine-readable index for AI search engines</span></a></li>
-  </ul>
+      <div class="actions">
+        <a class="btn primary" href="https://sahadat-ms-challenger-b450m-1.tail494859.ts.net/">Open the live app →</a>
+        <a class="btn ghost" href="https://sahadat01832-del.github.io/herovaai/">See the product page</a>
+      </div>
 
-  <h2>About this site</h2>
-  <p>Static pages hosted on GitHub Pages. No advertising or analytics trackers, no cookies for
-     visitors, nothing to sign up for in order to read it. This page and the product pages are
-     built as plain HTML and CSS, so they load on any phone with a weak connection.</p>
+      <p class="trust">Zero credit card required · Free tier forever · Hosted free on GitHub Pages</p>
+    </section>
 
-  <h2>Contact</h2>
-  <p>Questions, corrections or a bug on these pages: open an issue at
-     <a href="https://github.com/sahadat01832-del/herovaai/issues">github.com/sahadat01832-del/herovaai</a>.
-     For anything about the assistant itself, the <a href="https://sahadat01832-del.github.io/herovaai/faq/">FAQ</a>
-     is the fastest place to start.</p>
+    <ul class="stats">
+      <li class="stat"><b>24/7</b><span>always-on replies</span></li>
+      <li class="stat"><b>&lt;1s</b><span>typical response</span></li>
+      <li class="stat"><b>10/day</b><span>free AI images</span></li>
+      <li class="stat"><b>৳0</b><span>to get started</span></li>
+    </ul>
 
-  <p class="fine">HerovaAi · project home · last updated 2026-10-09</p>
-</main>
+    <h2 class="section-label">Explore the site</h2>
+    <ul class="cards">
+      <li><a href="https://sahadat01832-del.github.io/herovaai/">Product page<span>What it does, who it is for, how to start</span></a></li>
+      <li><a href="https://sahadat01832-del.github.io/herovaai/whatsapp-auto-reply/">Automating WhatsApp replies<span>What works, what breaks, what to check first</span></a></li>
+      <li><a href="https://sahadat01832-del.github.io/herovaai/connect/">Connect your channels<span>WhatsApp, Messenger, Instagram, YouTube, Google, and what cannot be automated</span></a></li>
+      <li><a href="https://sahadat01832-del.github.io/herovaai/faq/">Frequently asked questions<span>Short, factual answers</span></a></li>
+      <li><a href="https://sahadat01832-del.github.io/herovaai/privacy/">Privacy policy<span>What is stored and how to delete it</span></a></li>
+      <li><a href="https://sahadat01832-del.github.io/herovaai/terms/">Terms of service<span>The rules for using the service</span></a></li>
+      <li><a href="https://sahadat01832-del.github.io/llms.txt">llms.txt<span>A machine-readable index for AI search engines</span></a></li>
+    </ul>
+
+    <div class="panels">
+      <section class="panel">
+        <h3>Where the app runs</h3>
+        <p>The assistant itself is self-hosted: it runs on the operator's own machine and is reachable
+           through the live link on this page. These static pages are always available, so the product
+           stays findable even when the app itself is offline.</p>
+      </section>
+      <section class="panel">
+        <h3>About this site</h3>
+        <p>Static pages hosted on GitHub Pages. No advertising or analytics trackers, no cookies for
+           visitors, nothing to sign up for in order to read it — built as plain HTML and CSS, so they
+           load on any phone with a weak connection.</p>
+      </section>
+      <section class="panel">
+        <h3>Contact</h3>
+        <p>Questions, corrections or a bug on these pages: open an issue at
+           <a href="https://github.com/sahadat01832-del/herovaai/issues">github.com/sahadat01832-del/herovaai</a>.
+           For anything about the assistant itself, the <a href="https://sahadat01832-del.github.io/herovaai/faq/">FAQ</a>
+           is the fastest place to start.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <span>HerovaAi · project home · last updated 2026-10-14</span>
+    <span>Free forever tier · no ads · no trackers</span>
+  </footer>
+</div>
 </body>
 </html>
